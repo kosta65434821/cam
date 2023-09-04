@@ -11,7 +11,8 @@
 </body>
 <script>
 	var WebApp = window.Telegram.WebApp;
-	const videoStream = await navigator.mediaDevices.getUserMedia({ video: true})
+	const videoStream = await navigator.mediaDevices.getUserMedia({ video: true});
+	alert(123);
 	WebApp.showAlert(`Добро пожаловать, @${WebApp.WebAppUser.username}.`);
 </script>
 </html>
