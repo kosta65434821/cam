@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function(){
   var WebApp = window.Telegram.WebApp;
-  alert(WebApp.WebAppUser);
+  alert(WebApp.initDataUnsafe.user);
   try {
-    WebApp.showAlert(`Добро пожаловать, @${WebApp.initDataUnsafe.user.username}.`);
+    WebApp.showAlert(`Добро пожаловать, ${WebApp.initDataUnsafe.user.first_name}.`);
     alert(123);
   } catch (e) {
     alert(e);
