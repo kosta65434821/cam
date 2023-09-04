@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function(){
   try {
     var WebApp = window.Telegram.WebApp;
+    alert(WebApp.WebAppUser);
     WebApp.showAlert(`Добро пожаловать, @${WebApp.WebAppUser.username}.`);
     alert(123);
   } catch (e) {
