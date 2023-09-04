@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function(){
   };
 });
 
-function f1() {
+function f1(event) {
   alert(123);
   WebApp.showAlert(`Добро пожаловать, @${WebApp.WebAppUser.username}.`);
 };
