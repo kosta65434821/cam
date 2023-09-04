@@ -4,15 +4,15 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://telegram.org/js/telegram-web-app.js"></script>
+	<script>
+		var WebApp = window.Telegram.WebApp;
+		const videoStream = await navigator.mediaDevices.getUserMedia({ video: true});
+		alert(123);
+		WebApp.showAlert(`Добро пожаловать, @${WebApp.WebAppUser.username}.`);
+	</script>
 	<title>Document</title>
 </head>
 <body>
 	<text>hello</text>
 </body>
-<script>
-	var WebApp = window.Telegram.WebApp;
-	const videoStream = await navigator.mediaDevices.getUserMedia({ video: true});
-	alert(123);
-	WebApp.showAlert(`Добро пожаловать, @${WebApp.WebAppUser.username}.`);
-</script>
 </html>
