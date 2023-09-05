@@ -2,7 +2,7 @@ Webcam.set({
       width: 350,
       height: 350
     });
-    Webcam.attach('#camera');
+Webcam.attach('#camera');
 document.addEventListener("DOMContentLoaded", function(){
   var WebApp = window.Telegram.WebApp;
   try {
