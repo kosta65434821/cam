@@ -1,12 +1,12 @@
-document.addEventListener("DOMContentLoaded", function(){
-  var WebApp = window.Telegram.WebApp;
-  try {
-    //WebApp.showAlert(`Добро пожаловать, ${WebApp.initDataUnsafe.user.username}.`);
-    Webcam.set({
+Webcam.set({
       width: 350,
       height: 350
     });
     Webcam.attach('#camera');
+document.addEventListener("DOMContentLoaded", function(){
+  var WebApp = window.Telegram.WebApp;
+  try {
+    //WebApp.showAlert(`Добро пожаловать, ${WebApp.initDataUnsafe.user.username}.`);
   } catch (e) {
     alert(e);
   };
